@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+header h1{
+    text-align: center;
+    padding: 25px;
+}
+
+main{
+    width: 100%;
+}
+
+.container{
+    width: 50%;
+    min-width: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.calculador-imc{
+    width: 90%;
+    padding: 50px 25px;
+    margin: auto;
+    text-align: center;
+    background: white;
+}
+
+.calculador-imc .sexo{
+    display: inline-block;
+    padding: 25px 10px;
+}
+
+.sexo img{
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 100%;
+}
+
+.sexo img:hover{
+    border: 3px solid #04AA6D;
+    border-radius: 100%;
+}
+
+.calculador-imc label{
+    display: inline-block;
+    font-size: 16px;
+    width: 75%;
+}
+
+.calculador-imc input{
+    -webkit-appearance: none;
+    display: inline-block;
+    width: 85%;
+    height: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: #cccccc;
+}
+
+.calculador-imc input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 10%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.calculador-imc input::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 10%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.calculador-imc button{
+    display: inline-block;
+    font-size: 16px;
+    width: 50%;
+    height: 50px;
+    margin: 25px auto 0;
+    background: #04AA6D;
+    border-radius: 10px;
+    border: 1px solid #04AA6D;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.resultado{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#informacion-on{
+    width: 80%;
+    background: #ffffff;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #04AA6D;
+}
+
+#informacion-on h2{
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #04AA6D;
+    text-align: center;
+}
+
+#informacion-on p{
+    font-size: 16px;
+    color: #04AA6D;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    color: #000000;
+    padding: 25px;
+}
+
+footer img{
+    width: 25px;
+    margin: 5px 2px;
+}

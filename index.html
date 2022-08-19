@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora IMC</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Calculadora IMC Pro</h1>
+        </header>
+
+        <main>
+            <div class="container">
+
+                <div class="calculador-imc">
+
+                    <div class="sexo">
+                        <img src="images/btn-man.png" alt="Imagen Hombre">
+                        <p>Masculino</p>
+                    </div>
+                    <div class="sexo">
+                        <img src="images/btn-woman.png" alt="Imagen Mujer">
+                        <p>Femenino</p>
+                    </div>
+
+                    <label for="peso">Peso: <span id="infoPeso">10</span> kg</label>
+                    <input id="peso" type="range" min="10" max="150" value="0">
+    
+                    <label for="altura">Altura: <span id="infoAltura">1</span> mt</label>
+                    <input id="altura" type="range" min="1" max="2" step="0.01" value="0">
+    
+                    <button id="calcularIMC">Calcular IMC</button>
+                </div>
+
+                <div class="resultado">
+                    <div id="informacion-on">
+                        <h2>Sin Informacion</h2>
+                        <p>Ingresa la informacion y luego presiona Calcular IMC</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <p>Alura Challenger 1 - Develop by A. Barrera 2022</p>
+            <a target="_blank" href=""><img src="images/LinkedIn_Logo.svg" alt="LinkedIn"></a>
+            <a target="_blank" href=""><img src="images/Github_Logo.svg" alt="Github"></a>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
