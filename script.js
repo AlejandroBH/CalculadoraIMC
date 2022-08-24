@@ -46,12 +46,20 @@ function iconSex(select){
 }
 
 function selectMan(){
+    document.getElementById("information-on").style.display = "none";
+    document.getElementById("information-off").style.display = "block";
+    weight.value = 0;
+    height.value = 0;
     sex = 1;
     iconSex(1);
     return sex;
 }
 
 function selectWoman(){
+    document.getElementById("information-on").style.display = "none";
+    document.getElementById("information-off").style.display = "block";
+    weight.value = 0;
+    height.value = 0;
     sex = 2;
     iconSex(2);
     return sex;
@@ -69,71 +77,72 @@ function calcImc(){
             resultImc.innerHTML = "Sexo: Masculino - IMC: " + result.toFixed(2);
             mostrarInfoExtra(1);
             imcBar.value = (result);
-        }else{
-            if(result > 20 && result < 24.9){
-                infoTitle.innerHTML = "Condición Normal";
-                resultImc.innerHTML = "Sexo: Masculino - IMC: " + result.toFixed(2);
-                mostrarInfoExtra(2);
-                imcBar.value = (result+20);
-            }else{
-                if(result > 25 && result < 29.9){
-                    infoTitle.innerHTML = "Condición Sobrepeso";
-                    resultImc.innerHTML = "Sexo: Masculino - IMC: " + result.toFixed(2);
-                    mostrarInfoExtra(3);
-                    imcBar.value = (result+25);
-                }else{
-                    if(result > 30 && result < 40){
-                        infoTitle.innerHTML = "Condición Obesidad";
-                        resultImc.innerHTML = "Sexo: Masculino - IMC: " + result.toFixed(2);
-                        mostrarInfoExtra(4);
-                        imcBar.value = (result+30);
-                    }else{
-                        if(result > 40){
-                            infoTitle.innerHTML = "Condición Obesidad Grave";
-                            resultImc.innerHTML = "Sexo: Masculino - IMC: " + result.toFixed(2);
-                            mostrarInfoExtra(5);
-                            imcBar.value = (result+40);
-                        }
-                    }
-                }
-            }
+        }
+        
+        if(result > 20 && result < 24.9){
+            infoTitle.innerHTML = "Condición Normal";
+            resultImc.innerHTML = "Sexo: Masculino - IMC: " + result.toFixed(2);
+            mostrarInfoExtra(2);
+            imcBar.value = (result+20);
+        }
+        
+        if(result > 25 && result < 29.9){
+            infoTitle.innerHTML = "Condición Sobrepeso";
+            resultImc.innerHTML = "Sexo: Masculino - IMC: " + result.toFixed(2);
+            mostrarInfoExtra(3);
+            imcBar.value = (result+25);
+        }
+        
+        if(result > 30 && result < 40){
+            infoTitle.innerHTML = "Condición Obesidad";
+            resultImc.innerHTML = "Sexo: Masculino - IMC: " + result.toFixed(2);
+            mostrarInfoExtra(4);
+            imcBar.value = (result+30);
+        }
+        
+        if(result > 40){
+            infoTitle.innerHTML = "Condición Obesidad Grave";
+            resultImc.innerHTML = "Sexo: Masculino - IMC: " + result.toFixed(2);
+            mostrarInfoExtra(5);
+            imcBar.value = (result+40);
         }
         return result;
     }
+    
     if(sex==2){
         if(result < 19){
             infoTitle.innerHTML = "Condición Desnutrición";
             resultImc.innerHTML = "Sexo: Femenino - IMC: " + result.toFixed(2);
             mostrarInfoExtra(1);
             imcBar.value = (result);
-        }else{
-            if(result > 19 && result < 23){
-                infoTitle.innerHTML = "Condición Normal";
-                resultImc.innerHTML = "Sexo: Femenino - IMC: " + result.toFixed(2);
-                mostrarInfoExtra(2);
-                imcBar.value = (result+20);
-            }else{
-                if(result > 24 && result < 27){
-                    infoTitle.innerHTML = "Condición Sobrepeso";
-                    resultImc.innerHTML = "Sexo: Femenino - IMC: " + result.toFixed(2);
-                    mostrarInfoExtra(3);
-                    imcBar.value = (result+25);
-                }else{
-                    if(result > 27 && result < 32){
-                        infoTitle.innerHTML = "Condición Obesidad";
-                        resultImc.innerHTML = "Sexo: Femenino - IMC: " + result.toFixed(2);
-                        mostrarInfoExtra(4);
-                        imcBar.value = (result+30);
-                    }else{
-                        if(result > 32){
-                            infoTitle.innerHTML = "Condición Obesidad Grave";
-                            resultImc.innerHTML = "Sexo: Femenino - IMC: " + result.toFixed(2);
-                            mostrarInfoExtra(5);
-                            imcBar.value = (result+40);
-                        }
-                    }
-                }
-            }
+        }
+        
+        if(result > 19 && result < 23){
+            infoTitle.innerHTML = "Condición Normal";
+            resultImc.innerHTML = "Sexo: Femenino - IMC: " + result.toFixed(2);
+            mostrarInfoExtra(2);
+            imcBar.value = (result+20);
+        }
+        
+        if(result > 24 && result < 27){
+            infoTitle.innerHTML = "Condición Sobrepeso";
+            resultImc.innerHTML = "Sexo: Femenino - IMC: " + result.toFixed(2);
+            mostrarInfoExtra(3);
+            imcBar.value = (result+25);
+        }
+        
+        if(result > 27 && result < 32){
+            infoTitle.innerHTML = "Condición Obesidad";
+            resultImc.innerHTML = "Sexo: Femenino - IMC: " + result.toFixed(2);
+            mostrarInfoExtra(4);
+            imcBar.value = (result+30);
+        }
+        
+        if(result > 32){
+            infoTitle.innerHTML = "Condición Obesidad Grave";
+            resultImc.innerHTML = "Sexo: Femenino - IMC: " + result.toFixed(2);
+            mostrarInfoExtra(5);
+            imcBar.value = (result+40);
         }
         return result;
     }
@@ -151,5 +160,4 @@ document.getElementById("information-on").style.display = "none";
 
 sexMan.onclick = selectMan;
 sexWoman.onclick = selectWoman;
-
 btnCalc.onclick = calcImc;
