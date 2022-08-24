@@ -2,6 +2,10 @@ let weight = document.querySelector("#weight");
 let infoWeight = document.querySelector("#infoWeight");
 let height = document.querySelector("#height");
 let infoHeight = document.querySelector("#infoHeight");
+
+let imcBar = document.querySelector("#imc-bar");
+
+
 let sexMan = document.querySelector("#sex-man");
 let sexWoman = document.querySelector("#sex-woman");
 let infoTitle = document.querySelector(".info-title");
@@ -42,6 +46,7 @@ function calcImc(){
     if(sex=="man"){
         console.log(result + " man");
         infoTitle.innerHTML = "Sexo Masculino";
+        imcBar.value = result;
         return result;
     }
     if(sex=="woman"){
@@ -59,7 +64,7 @@ height.oninput = () => {
     infoHeight.innerHTML = height.value;
 }
 
-document.getElementById("information-on").style.display = "none";
+document.getElementById("information-off").style.display = "none";
 
 sexMan.onclick = selectMan;
 sexWoman.onclick = selectWoman;

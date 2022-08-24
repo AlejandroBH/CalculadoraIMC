@@ -163,6 +163,36 @@ main{
     text-align: center;
 }
 
+#imc-bar{
+    -webkit-appearance: none;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: rgb(0,255,255);
+    background: -moz-linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,255,0,1) 25%, rgba(255,255,0,1) 50%, rgba(255,101,0,1) 75%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,255,0,1) 25%, rgba(255,255,0,1) 50%, rgba(255,101,0,1) 75%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,255,0,1) 25%, rgba(255,255,0,1) 50%, rgba(255,101,0,1) 75%, rgba(255,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffff",endColorstr="#ff0000",GradientType=1);
+}
+
+#imc-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #04AA6D;
+}
+
+#imc-bar::-moz-range-thumb{
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #04AA6D;
+}
+
 footer{
     text-align: center;
     color: #000000;
