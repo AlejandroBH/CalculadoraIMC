@@ -50,6 +50,8 @@ function selectMan(){
     document.getElementById("information-off").style.display = "block";
     weight.value = 0;
     height.value = 0;
+    infoWeight.innerHTML = weight.value;
+    infoHeight.innerHTML = height.value;
     sex = 1;
     iconSex(1);
     return sex;
@@ -60,6 +62,8 @@ function selectWoman(){
     document.getElementById("information-off").style.display = "block";
     weight.value = 0;
     height.value = 0;
+    infoWeight.innerHTML = weight.value;
+    infoHeight.innerHTML = height.value;
     sex = 2;
     iconSex(2);
     return sex;
