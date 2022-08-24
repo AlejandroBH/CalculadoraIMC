@@ -225,7 +225,20 @@ footer img{
     margin: 5px 2px;
 }
 
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-button{
+    width: 0px;
+    height: 0px;
+}
+
 @media screen and (max-width:1000px) {
+    body{
+        background-image: url(images/bg1000.jpg);
+    }
 
     header{
         background: rgb(199,217,217);
