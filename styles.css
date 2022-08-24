@@ -157,9 +157,16 @@ main{
     text-align: center;
 }
 
-#information-on p{
-    font-size: 16px;
+#information-on .result-imc{
+    font-size: 24px;
     color: #04AA6D;
+    text-align: center;
+}
+
+#information-on .info-extra{
+    font-size: 16px;
+    width: 85%;
+    margin: 10px auto 0;
     text-align: center;
 }
 
