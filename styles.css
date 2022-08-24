@@ -6,7 +6,17 @@
 }
 
 body{
-    background-color: aquamarine;
+    background-color: #c7d9d9;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header img{
+    position: relative;
+    top: 15px;
+    margin: 0 10px;
+    width: 100px;
 }
 
 header h1{
@@ -22,8 +32,10 @@ main{
     width: 50%;
     min-width: 700px;
     margin: auto;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(2px);
     border-radius: 25px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
 .imc-calculator{
@@ -31,7 +43,7 @@ main{
     padding: 50px 25px;
     margin: auto;
     text-align: center;
-    background: white;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .imc-calculator .sex{
@@ -126,6 +138,7 @@ main{
     padding: 25px;
     border-radius: 10px;
     border: 1px solid #04AA6D;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
 #information-off h2{
@@ -148,6 +161,7 @@ main{
     padding: 25px;
     border-radius: 10px;
     border: 1px solid #04AA6D;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
 #information-on h2{
@@ -212,9 +226,28 @@ footer img{
 }
 
 @media screen and (max-width:1000px) {
+
+    header{
+        background: rgb(199,217,217);
+        background: -moz-linear-gradient(180deg, rgba(199,217,217,1) 0%, rgba(199,217,217,0.75) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(199,217,217,1) 0%, rgba(199,217,217,0.75) 100%);
+        background: linear-gradient(180deg, rgba(199,217,217,1) 0%, rgba(199,217,217,0.75) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c7d9d9",endColorstr="#c7d9d9",GradientType=1);
+    }
+
+    header h1{
+        font-size: 27px;
+        text-shadow: 0px 0px 5px #ffffff;
+    }
+
+    header img{
+        width: 80px;
+    }
+
     main .container{
-        width: 100%;
+        width: 97%;
         min-width: auto;
+        background-color: rgba(255, 255, 255, 0.95);
     }
 
     .imc-calculator input{
@@ -247,5 +280,26 @@ footer img{
 
     #information-on .info-extra{
         width: 100%;
+    }
+
+    footer{
+        width: 100%;
+        padding: 10px 0;
+        background: rgb(199,217,217);
+        background: -moz-linear-gradient(0deg, rgba(199,217,217,1) 0%, rgba(199,217,217,0.75) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(199,217,217,1) 0%, rgba(199,217,217,0.75) 100%);
+        background: linear-gradient(0deg, rgba(199,217,217,1) 0%, rgba(199,217,217,0.75) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c7d9d9",endColorstr="#c7d9d9",GradientType=1);
+    }
+
+    footer p{
+        font-weight: bold;
+        font-size: 17px;
+        text-shadow: 0px 0px 5px #ffffff;
+        padding: 10px;
+    }
+
+    footer img{
+        width: 50px;
     }
 }

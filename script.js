@@ -18,7 +18,7 @@ function mostrarInfoExtra(select){
             infoExtra.innerHTML = "La delgadez puede deberse a diversos factores, tales como genéticos y dietéticos. Independiente de su causa, es importante para tu bienestar mantener un peso saludable.";
         break;
         case 2:
-            infoExtra.innerHTML = "El equilibrio del organismo -su homeostasis- se obtiene con mayor facilidad si el peso de una persona es normal. Una dieta balanceada y ejercicio ayudan a mantenerse en esta categoría.";
+            infoExtra.innerHTML = "El equilibrio del organismo se obtiene con mayor facilidad si el peso de una persona es normal. Una dieta balanceada y ejercicio ayudan a mantenerse en esta categoría.";
         break;
         case 3:
             infoExtra.innerHTML = "Una mala alimentación y hábitos sedentarios pueden contribuir a acumular grasa en tu cuerpo, lo que puede llevar a problemas médicos en el futuro.";
