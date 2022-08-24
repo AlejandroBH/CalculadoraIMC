@@ -210,3 +210,42 @@ footer img{
     width: 25px;
     margin: 5px 2px;
 }
+
+@media screen and (max-width:1000px) {
+    main .container{
+        width: 100%;
+        min-width: auto;
+    }
+
+    .imc-calculator input{
+        width: 100%;
+    }
+
+    #calculate-imc{
+        width: 100%;
+    }
+
+    .result{
+        width: 100%;
+    }
+
+    #information-off{
+        width: 90%;
+    }
+
+    #information-on{
+        width: 90%;
+    }
+
+    #information-on h2{
+        font-size: 24px;
+    }
+
+    #information-on .result-imc{
+        font-size: 20px;
+    }
+
+    #information-on .info-extra{
+        width: 100%;
+    }
+}
