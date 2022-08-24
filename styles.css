@@ -26,7 +26,7 @@ main{
     border-radius: 25px;
 }
 
-.calculador-imc{
+.imc-calculator{
     width: 90%;
     padding: 50px 25px;
     margin: auto;
@@ -34,31 +34,31 @@ main{
     background: white;
 }
 
-.calculador-imc .sexo{
+.imc-calculator .sex{
     display: inline-block;
     padding: 25px 15px;
 }
 
-.sexo img{
+.sex img{
 	width: 100px;
     border: 3px solid rgba(0, 0, 0, 0);
     border-radius: 100%;
     transition: 0.5s;
 }
 
-.sexo img:hover{
+.sex img:hover{
     border: 3px solid #00be78;
     border-radius: 100%;
     cursor: pointer;
 }
 
-.calculador-imc label{
+.imc-calculator label{
     display: inline-block;
     font-size: 16px;
     width: 75%;
 }
 
-.calculador-imc input{
+.imc-calculator input{
     -webkit-appearance: none;
     display: inline-block;
     width: 85%;
@@ -68,7 +68,7 @@ main{
     background: #cccccc;
 }
 
-.calculador-imc input::-webkit-slider-thumb{
+.imc-calculator input::-webkit-slider-thumb{
     -webkit-appearance: none;
     width: 25px;
     height: 25px;
@@ -77,7 +77,7 @@ main{
     cursor: pointer;
 }
 
-.calculador-imc input::-moz-range-thumb{
+.imc-calculator input::-moz-range-thumb{
     -webkit-appearance: none;
     width: 25px;
     height: 25px;
@@ -86,7 +86,7 @@ main{
     cursor: pointer;
 }
 
-.calculador-imc button{
+.imc-calculator button{
     display: inline-block;
     font-size: 16px;
     width: 50%;
@@ -100,7 +100,7 @@ main{
     transition: 0.5s;
 }
 
-.calculador-imc button:hover{
+.imc-calculator button:hover{
     display: inline-block;
     font-size: 16px;
     width: 50%;
@@ -113,13 +113,13 @@ main{
     cursor: pointer;
 }
 
-.resultado{
+.result{
     width: 90%;
     margin: auto;
     padding-bottom: 50px;
 }
 
-#informacion-off{
+#information-off{
     width: 80%;
     background: #ffffff;
     margin: auto;
@@ -128,14 +128,36 @@ main{
     border: 1px solid #04AA6D;
 }
 
-#informacion-off h2{
+#information-off h2{
     margin-bottom: 10px;
     font-size: 32px;
     color: #04AA6D;
     text-align: center;
 }
 
-#informacion-off p{
+#information-off p{
+    font-size: 16px;
+    color: #04AA6D;
+    text-align: center;
+}
+
+#information-on{
+    width: 80%;
+    background: #ffffff;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #04AA6D;
+}
+
+#information-on h2{
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #04AA6D;
+    text-align: center;
+}
+
+#information-on p{
     font-size: 16px;
     color: #04AA6D;
     text-align: center;

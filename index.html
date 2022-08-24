@@ -20,29 +20,33 @@
         <main>
             <div class="container">
 
-                <div class="calculador-imc">
+                <div class="imc-calculator">
 
-                    <div class="sexo">
+                    <div class="sex">
                         <img id="sex-man" src="images/btn-man.svg" alt="Imagen Hombre">
                         <p>Masculino</p>
                     </div>
-                    <div class="sexo">
+                    <div class="sex">
                         <img id="sex-woman" src="images/btn-woman.svg" alt="Imagen Mujer">
                         <p>Femenino</p>
                     </div>
 
-                    <label for="peso">Peso: <span id="infoPeso">10</span> kg</label>
-                    <input id="peso" type="range" min="10" max="150" value="0">
+                    <label for="weight">Peso: <span id="infoWeight">10</span> kg</label>
+                    <input id="weight" type="range" min="10" max="150" value="0">
     
-                    <label for="altura">Altura: <span id="infoAltura">1</span> mt</label>
-                    <input id="altura" type="range" min="1" max="2" step="0.01" value="0">
+                    <label for="height">Altura: <span id="infoHeight">1</span> mt</label>
+                    <input id="height" type="range" min="1" max="2" step="0.01" value="0">
     
-                    <button id="calcularIMC">Calcular IMC</button>
+                    <button id="calculate-imc">Calcular IMC</button>
                 </div>
 
-                <div class="resultado">
-                    <div id="informacion-off">
+                <div class="result">
+                    <div id="information-off">
                         <h2>Sin Informacion</h2>
+                        <p>Ingresa la informacion y luego presiona Calcular IMC</p>
+                    </div>
+                    <div id="information-on">
+                        <h2 class="info-title">Sin Informacion</h2>
                         <p>Ingresa la informacion y luego presiona Calcular IMC</p>
                     </div>
                 </div>
